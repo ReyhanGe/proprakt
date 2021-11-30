@@ -4,13 +4,10 @@
     height: 20vh;
 }
 
-/**
 input{
-float: right;
-  padding: 6px;
-  margin-top: 8px;
-  margin-right: 16px;
-  border: none;
-  font-size: 17px;
+    float: right;
+    border: none;
+    font-size: 17px;
 } 
-**/
+/** **/
+
