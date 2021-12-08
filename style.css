@@ -89,13 +89,14 @@ header nav ul > li > ul >li > a {
 }
 
 input{
-    width: 65%;
+    width: 90%;
     box-shadow: 0 .1rem .3rem 0 rgba(0,0,0,.2);
     color:rgb(194, 0, 0);
     float: right;
     border: none;
     font-size: 1rem;
     padding: 1rem;
+    margin-left: 2rem ;
 }
 
 .text {
@@ -126,7 +127,9 @@ a:hover {
   text-align:center;
   color: darkblue;
   border: 1rem solid bisque;
-  position:relative
+  position:relative;
+  padding: 1rem ;
+  margin-top: 6rem;
 }
 
 .img-tv{
