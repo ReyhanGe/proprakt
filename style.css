@@ -97,43 +97,33 @@ input{
     padding: 1rem;
 }
 
-.slider{
-  overflow:hidden ;
-  height: 90%;
-  width: 90%;
-  margin-left: 4rem;
-  margin-top:19rem;
-}
 
-@-webkit-keyframes slide_animation{
-  0% {left : 0rem}
-  10% {left : 0rem}
-  20% {left : 1200rem}
-  30% {left : 1200rem}
-  40% {left : 2400rem}
-  50% {left : 2400rem}
-  60% {left : 1200rem}
-  70% {left : 1200rem}
-  80% {left : 0rem}
-  90% {left : 0rem}
-  100% {left : 0rem}
-}
+  .text {
+    color: #f5d6d6;
+    border: 1rem solid rgb(140, 224, 252);
+    background-color: rgb(184, 118, 247);
+    font-size:larger;
+    padding: 0.5rem 1rem;
+    margin-left: 2rem;
+    position: absolute;
+    bottom: 10rem;
+    width: 10%;   
+    text-decoration: none; 
+    text-shadow: 2px 2px red;
+  }
+  a:hover {
+    color: rgb(169, 238, 255);
+  }
+  
+  .img-1
+  {
+      padding: 3rem 1rem 1rem 1rem;
+  }
+ 
 
-.slider-img{
-  width:360rem;
-  height: 80rem;
-  margin: 0 0 0 240rem;
-  position: relative;
-  -webkit-animation-name: slide_animation;
-  -webkit-animation-duration: 33s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-  -webkit-animation-play-state: running;
-}
-.img3{
-  height: 90%;
-  width:90% ;
-  position: relative;
-  float: left;
-}
+  .text-h2 {
+    text-align:center;
+    color: darkblue;
+    
 
+  }
