@@ -3,7 +3,7 @@ html, body {
     height:100% ;
     padding:0 ;
     margin: 0;   
-    
+    max-width: 100%;
 }
 
 body * { 
@@ -97,6 +97,7 @@ input{
     font-size: 1rem;
     padding: 1rem;
     margin-left: 2rem ;
+
 }
 
 .text {
@@ -111,6 +112,7 @@ input{
   width: 10%;   
   text-decoration: none; 
   text-shadow: 2px 2px red;
+  position: relative;
 }
 
 a:hover {
@@ -130,30 +132,44 @@ a:hover {
   position:relative;
   padding: 1rem ;
   margin-top: 6rem;
+  margin-bottom: 4rem;
 }
 
-.img-tv{
-  padding: 3rem 1rem 1rem 1rem;
-  width:75%;
-  float:left;
+.column {
+  border: 0.2rem solid goldenrod;
+  float: left;
+  padding: 1rem;
+  padding-top: 3rem;
+  margin-bottom: 4rem;
+  
+
 }
 
 .img-samsung{
-  padding: 3rem 1rem 1rem 1rem;
-  object-fit: scale-down;
-  float:right;
-  width: 40%;
-  height: 40%;
-  margin-top: -28rem; 
-  position: inherit;
+ margin-right:2rem ;
+ margin-right: 3rem;
+ margin-top: 1rem;
+ position: relative;
+ width: 15%; 
+ height:15%; 
+ float:right;
 }
 
-.img-samsungz{
-  padding: 3rem 1rem 1rem 1rem;
-  object-fit: scale-down;
-  float:right;
-  width: 40%;
-  height: 40%;
-  margin-top: -16rem; 
+.img-phone{
+  width: 15%; 
+  height:15%; 
+  float : right;
+  position:relative;
+  margin:-11rem 3rem 0rem 6rem;
 }
 
+.img-tv{
+  border-radius: 30%; 
+  width: 70%; 
+  height:70%;
+}
+.container {
+  display: flex;
+  flex-direction:row;
+  padding-left: 3rem;
+}
