@@ -172,6 +172,13 @@ a:hover {
   padding-left: 3rem;
 }
 
+.container_form , .h1{
+  font-size: larger;
+  color: rgb(199, 129, 0);
+  text-align: center;
+  padding-top: 2rem;
+}
+
 input[type=text], textarea {
   width: 48%;
   padding: 1rem;
@@ -202,7 +209,6 @@ textarea, #subject {
   font-size: medium;
   box-shadow: 0rem 0rem 1rem 0rem rgba(0, 0, 0, 0.2);
 }
-
 
 input[type=submit] {
   width: 40%;
