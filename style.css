@@ -227,5 +227,46 @@ input[type=submit]:hover {
 
 
 
+.button {
+  background-color: #84af4c; 
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin: 4rem 4rem;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  width: 90%;
+  height: 15%;
+}
+
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width:95%;
+  border: 1px solid rgb(233, 21, 21);
+  margin-top: 4rem;
+  align-items: center;
+  
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f35b5b;
+}
+
+
+
 
 
