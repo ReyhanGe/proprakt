@@ -231,7 +231,7 @@ input[type=submit]:hover {
   background-color: #84af4c; 
   border: none;
   color: white;
-  font-size: 16px;
+  font-size: 2rem;
   margin: 4rem 4rem;
   cursor: pointer;
   -webkit-transition-duration: 0.4s; 
@@ -253,17 +253,18 @@ table {
   width:95%;
   border: 1px solid rgb(233, 21, 21);
   margin-top: 4rem;
-  align-items: center;
+  
+  
   
 }
 
 th, td {
   text-align: left;
-  padding: 16px;
+  padding: 1rem;
 }
 
 tr:nth-child(even) {
-  background-color: #f35b5b;
+  background-color: #e59595;
 }
 
 

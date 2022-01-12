@@ -1,63 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>RecentiePagina</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>RecentiePagina</title>
+    </head>
+    <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li> <a href="homepage.html"><img src="img/horizontal_on_white_by_logaster.png" alt="logo"></a></li> 
-                <li> <a href="">Categorie </a>  
-                    <ul> 
-                        <li> <a href="homepage.html"> TV </a> </li>
-                        <li> <a href="homepage.html"> Computer, Laptops, Monitoren </a> </li>
-                        <li> <a href="homepage.html"> Mobiel Telephone </a> </li>
-                    </ul>  
-                </li>       
-                <li> <a href="overons.html">Over Ons</a></li> 
-                <li> <a href="recentie.html">Recentiepagina </a> </li>
-                <li> <a href="contact.html ">Contact </a>  </li>
-                <li> <input type="text-search" placeholder="Search.."> </li>               
-            </ul>
-        </nav>
-    </header>
-
-
-    <div class="container_form">
-        <h1>Recentie</h1>
-        <form action="./action_page.php">
-          <label for="fname"></label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      
-          <label for="lname"></label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          
-          <label for="lname"></label>
-          <input type="text" id="tphone" name="phone" placeholder="Your telephone nummer..">
-
-          <label for="email"><b></b></label>
-          <input type="text" id="email"  name="email" placeholder="Your email..."   required>
-
-          <label for="subject"></label>
-          <textarea id="subject" name="subjectt" placeholder="Write something.." ></textarea>
-
-          <input type="submit" value="Submit">
-        </form>
-    </div>
-
-<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta modi quos officiis repudiandae, autem iusto. Adipisci unde, possimus, voluptatem dolorum debitis rem id blanditiis assumenda in, necessitatibus eos autem perspiciatis.</p>
--->
+        <header>
+            <nav>
+                <ul>
+                    <li> <a href="homepage.html"><img src="img/horizontal_on_white_by_logaster.png" alt="logo"></a></li> 
+                    <li> <a href="">Categorie </a>  
+                        <ul> 
+                            <li> <a href="homepage.html"> TV </a> </li>
+                            <li> <a href="homepage.html"> Computer, Laptops, Monitoren </a> </li>
+                            <li> <a href="homepage.html"> Mobiel Telephone </a> </li>
+                        </ul>  
+                    </li>       
+                    <li> <a href="overons.html">Over Ons</a></li> 
+                    <li> <a href="recentie.html">Recentiepagina </a> </li>
+                    <li> <a href="contact.html ">Contact </a>  </li>
+                    <li> <input type="text-search" placeholder="Search.."> </li>               
+                </ul>
+            </nav>
+        </header>
 
 
-   <button class="button button2" onclick="window.location.href = 'http://www.reynzen.nl/action_page.php';">Klik om alle berichten te zien</button>
+        <div class="container_form">
+            <h1>Recentie</h1>
+            <form action="./action_page.php" method ="post">
+              <label for="fname"></label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            
+              <label for="lname"></label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            
+              <label for="lname"></label>
+              <input type="text" id="tphone" name="phone" placeholder="Your telephone nummer..">
+
+              <label for="email"><b></b></label>
+              <input type="text" id="email"  name="email" placeholder="Your email..."   required>
+
+              <label for="subject"></label>
+              <textarea id="subject" name="subjectt" placeholder="Write something.." ></textarea>
+
+              <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <button class="button button2" onclick="window.location.href = 'http://www.reynzen.nl/action_page.php';">Klik om alle berichten te zien</button>
 
 
-
-</body>
+    </body>
 </html>

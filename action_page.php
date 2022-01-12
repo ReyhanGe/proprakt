@@ -2,9 +2,28 @@
 
 <?php
 
-include("./connect_db.php");
+$servername = "localhost";
+$username = "root";
+$password = "";
+$databasename= "reynzen";
 
-$sql = "SELECT * FROM recensie";
+$conn = mysqli_connect($servername, $username, $password, $databasename);
+
+
+$firstname = $_POST["firstname"];
+$lastname =  $_POST["lastname"];
+$phone = $_POST["phone"];
+$email = $_POST["email"];
+$subjectt = $_POST["subjectt"];
+
+$sql = "INSERT INTO `recensie` (`firstname`, `lastname`, `phone`, `email`, `subjectt`)
+VALUES ('$firstname','$lastname', '$phone', '$email', '$subjectt');";
+
+
+mysqli_query($conn, $sql);
+
+
+$sql = "SELECT * FROM `recensie`";
 
 $result = mysqli_query($conn, $sql);
 
@@ -37,7 +56,7 @@ $row = "";
     <header>
         <nav>
             <ul>
-                <li> <a href="homepage.html"><img src="img/horizontal_on_white_by_logaster.png" alt="logo"></a></li> 
+                <li> <a href="homepage.html"><img src="img/horizontal_on_white_by_logaster.png" alt="logo" style="width:79%"></a></li> 
                 <li> <a href="">Categorie </a>  
                     <ul> 
                         <li> <a href="homepage.html"> TV </a> </li>
@@ -64,7 +83,7 @@ $row = "";
                         <tr >
                             <th>Firstname</th>
                             <th>Lastname</th>
-                            <th>T-Nummer</th>
+                            <th>TelephoneNummer</th>
                             <th>E-mail</th>
                             <th>Bericht</th>
                         </tr>     
