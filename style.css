@@ -7,14 +7,27 @@ html, body {
 }
 
 body * { 
-    box-sizing: border-box ;
-    font-family: Verdana, sans-serif; 
-    margin:0
+  box-sizing: border-box ;
+  font-family: Verdana, sans-serif; 
+  margin:0
 }
+
+
+
 img{
   width: 80%;
   height: 80%;
 }
+
+.img-1
+{
+  width: 100;
+    padding: 4rem 4rem 4rem 4rem;
+    box-shadow: 1rem 1rem 1rem 0 rgba(0, 0, 0, 0.2), 0 1rem 1rem 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
 
 header,
 header nav {
@@ -119,11 +132,6 @@ a:hover {
   color: rgb(169, 238, 255);
 }
 
-.img-1
-{
-    padding: 3rem 1rem 1rem 1rem;
-    box-shadow: 1rem 1rem 1rem 0 rgba(0, 0, 0, 0.2), 0 1rem 1rem 0 rgba(0, 0, 0, 0.19);
-}
 
 .text-h2 {
   text-align:center;
@@ -226,7 +234,6 @@ input[type=submit]:hover {
 }
 
 
-
 .button {
   background-color: #84af4c; 
   border: none;
@@ -246,16 +253,12 @@ input[type=submit]:hover {
 }
 
 
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
   width:95%;
   border: 1px solid rgb(233, 21, 21);
-  margin-top: 4rem;
-  
-  
-  
+  margin-top: 4rem;  
 }
 
 th, td {
@@ -268,6 +271,54 @@ tr:nth-child(even) {
 }
 
 
+.contactimg{
+  width: auto;
+}
+
+
+.contacttekst{
+  text-align:right;
+  margin-top: -16rem;
+  margin-bottom: 10rem;
+  color: #1a72a5;
+  padding: 3rem;
+}
 
 
 
+
+
+@media screen and (max-width: 793px) {
+  body {
+    background-color: rgb(253, 211, 211);
+  }
+
+ header {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+
+
+
+
+
+
+}
+
+
+
+@media screen and (max-width: 280px) {
+
+.img-1
+{
+ 
+  margin:auto;
+    box-shadow: 1rem 1rem 1rem 0 rgba(0, 0, 0, 0.2), 0 1rem 1rem 0 rgba(0, 0, 0, 0.19);
+
+}
+}
