@@ -13,20 +13,25 @@ body * {
 }
 
 
-
 img{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.logo{
   width: 80%;
   height: 80%;
 }
 
 .img-1
 {
-  width: 100;
-    padding: 4rem 4rem 4rem 4rem;
+    width: 100;
+    padding: 2rem 2rem 2rem 2rem;
     box-shadow: 1rem 1rem 1rem 0 rgba(0, 0, 0, 0.2), 0 1rem 1rem 0 rgba(0, 0, 0, 0.19);
 
 }
-
 
 
 header,
@@ -68,7 +73,7 @@ header nav ul > li:hover ul{
     top: 100%;
 }
 
-/* yazıları yakınlaştırma ve yazıları küçültme*/
+/* yaziları yakınlaştırma ve yaziları küçültme*/
 
 header nav ul li a,
 header nav ul li a:visited {
@@ -145,47 +150,44 @@ a:hover {
 
 .column {
   border: 0.2rem solid goldenrod;
-  float: left;
-  padding: 1rem;
-  padding-top: 3rem;
-  margin-bottom: 4rem;
-}
 
-.img-samsung{
- margin-right:2rem ;
- margin-right: 3rem;
- margin-top: 1rem;
- position: relative;
- width: 15%; 
- height:15%; 
- float:right;
-}
-
-.img-phone{
-  width: 15%; 
-  height:15%; 
-  float : right;
-  position:relative;
-  margin:-11rem 3rem 0rem 6rem;
 }
 
 .img-tv{
   border-radius: 30%; 
   width: 70%; 
   height:70%;
+
 }
+
+.img-samsung{
+  width: 15%; 
+  height:15%; 
+  float:right;
+
+}
+
+.img-phone{
+  width: 15%; 
+  height:15%; 
+  float:right;
+  z-index: 5rem;
+}
+
 .container {
   display: flex;
   flex-direction:row;
-  padding-left: 3rem;
-  
+  padding: 0.4rem;
+  width: 100%;
+  height: 50%;
 }
 
-.container_form , .h1{
-  font-size: larger;
+
+.container_form , .recentie{
+  font-size:3.4rem;
   color: rgb(199, 129, 0);
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 input[type=text], textarea {
@@ -276,16 +278,15 @@ tr:nth-child(even) {
 }
 
 
+
+
 .contacttekst{
   text-align:right;
-  margin-top: -16rem;
+  margin-top: -19rem;
   margin-bottom: 10rem;
-  color: #1a72a5;
+  color: #317eaa;
   padding: 3rem;
 }
-
-
-
 
 
 @media screen and (max-width: 793px) {
@@ -299,26 +300,71 @@ tr:nth-child(even) {
   align-content: flex-start;
   justify-content: flex-start;
   align-items: center;
-
 }
 
-
-
-
-
-
-
 }
-
 
 
 @media screen and (max-width: 280px) {
+}
 
-.img-1
-{
- 
-  margin:auto;
-    box-shadow: 1rem 1rem 1rem 0 rgba(0, 0, 0, 0.2), 0 1rem 1rem 0 rgba(0, 0, 0, 0.19);
+
+
+
+@media screen and (max-width: 900px) {
+  body {
+    background-color: rgb(226, 55, 55);
+  } 
+}
+
+
+
+@media screen and (max-width: 710px){
+
+  input[type=text], textarea {
+    width: 75%;
+    justify-content: center;
+    float: none;
+  }
+  
+  textarea, #subject {
+    width: 75%;
+    border-radius: 1rem;
+    border: 0.1rem solid rgb(214, 166, 45);
+    margin-top: 1rem;
+    background-color:rgb(240, 238, 238);
+    font-size:medium;
+    box-shadow: 0rem 0rem 1rem 0rem rgba(0, 0, 0, 0.2);
+    float: none;
+    margin-left: 3rem;
+  }
+
+  input[type=submit] {
+    width: 80%;
+    background-color: #1ba7f8;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    float: none;
+  }
 
 }
+
+
+
+@media screen and (max-width: 580px) {
+
+  .yazı{
+    font-size: medium;
+    margin: auto;
+    padding: 0.3rem;
+    color: rgb(107, 53, 207);
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+
+
 }
