@@ -30,6 +30,7 @@ header, header nav {
   height: 20%;
   margin: auto;
   padding: auto;
+  margin-bottom: 5rem;
 }
 ul {
   list-style-type: none;
@@ -60,6 +61,7 @@ header nav ul > li > ul >li > a {
 }
 li {
   float: left;
+  margin-right: 2rem;
 }
 li a {
   display: block;
@@ -71,24 +73,23 @@ li a {
 li a:hover {
   background-color: rgb(253, 235, 235);
 }
-input{
-  width: 50%;
-  height: 50%;
+input[type=text-search]{
+  width: 70%;
   box-shadow: 0 .1rem .3rem 0 rgba(0,0,0,.2);
   color:rgb(194, 0, 0);
-  float: right;
   border: none;
   font-size: 1rem;
-  padding: 0.5rem;
-  margin-top: 2rem;
+  padding: 0.6rem;
+  margin: 2rem 2rem 2rem 2rem;
+  float: right;
 }
 a:hover {
   color: rgb(169, 238, 255);
 }
 .text-h2 {
   text-align:center;
-  color: darkblue;
-  border: 1rem solid bisque;
+  color: rgb(182, 60, 176);
+  border: 1rem solid rgb(207, 143, 63);
   position:relative;
   padding: 1rem ;
   margin-top: 6rem;
@@ -96,6 +97,8 @@ a:hover {
 }
 .column {
   border: 0.2rem solid goldenrod;
+  padding: 1rem;
+  margin: 1rem;
 }
 .img-tv{
   border-radius: 30%;
@@ -112,18 +115,23 @@ a:hover {
   height:15%;
   float:right;
 }
-.container {
+.containerfoto {
   display: flex;
   flex-direction:row;
   padding: 0.4rem;
   width: 100%;
   height: 50%;
+  border: 0.3rem solid rgb(218, 122, 32);
+  margin-top: 3rem;
+  justify-content: center;
+
 }
 .container_form , .recentie{
   font-size:3.4rem;
   color: rgb(199, 129, 0);
   text-align: center;
   padding-top: 1rem;
+  padding: 1rem;
 }
 input[type=text], textarea {
   width: 48%;
@@ -139,12 +147,10 @@ input[type=text], textarea {
   box-shadow: 0rem 0rem 1rem 0rem rgba(0, 0, 0, 0.2);
 }
 textarea, #subject {
-  width: 45%;
+  width: 100%;
   height:16rem;
-  padding: 1rem;
-  margin-right: 1rem;
-  margin-top: -13rem;
-  float: right;
+  padding: 1rem 1rem 1rem 1rem;
+  margin: 1rem 2rem 1rem 0rem;  
   background: scroll rgb(240, 238, 238);
   border-radius: 1rem;
   border: 0.1rem solid rgb(214, 166, 45);
@@ -155,7 +161,7 @@ textarea, #subject {
   box-shadow: 0rem 0rem 1rem 0rem rgba(0, 0, 0, 0.2);
 }
 input[type=submit] {
-  width: 40%;
+  width: 50%; 
   background-color: #1ba7f8;
   color: white;
   padding: 1rem 1rem 1rem 1rem;
@@ -167,43 +173,61 @@ input[type=submit] {
 input[type=submit]:hover {
   box-shadow: 0rem 0rem 1rem 0rem #28adfa;
 }
-.button {
-  background-color: #84af4c;
-  border: none;
-  color: white;
-  font-size: 2rem;
-  margin: 4rem 4rem;
-  cursor: pointer;
-  transition-duration: 0.4s;
-  width: 90%;
-  height: 15%;
-}
-.button2:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+.kopenyazi{
+ color: brown;
+ width: 9%;
+ padding: 0.5rem;
+
 }
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width:95%;
-  border: 1rem solid rgb(233, 21, 21);
-  margin-top: 4rem;
+  border: 0.6rem solid rgb(194, 38, 38);
+  margin-top: 9rem;
+  position:relative;
+  width: 100%;
+  overflow: hidden;
 }
 th, td {
   text-align: left;
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 1rem; 
 }
 tr:nth-child(even) {
   background-color: #e59595;
 }
 .contactimg{
-  width: auto;
+  width: 100%;
+  margin-top: 5rem;
 }
 .contacttekst{
   text-align:right;
   margin-top: -19rem;
   margin-bottom: 10rem;
-  color: #317eaa;
   padding: 3rem;
+  color: #317eaa;
+}
+.yazıtipi{
+  margin-top: 10rem;
+  color: #317eaa;
+  text-align: center;
+  padding-bottom: 1rem;  
+}
+.şirkethakkında{
+  /*border: 0.4rem solid rgb(216, 89, 153); */
+  margin-top: -50rem;
+  color: rgb(0, 0, 0);
+  font-size: larger;
+  padding: 17rem;
+}
+.containercontact{
+  margin: 1rem;
+  padding: 1rem;
+}
+.coll{
+  float: left;
+}
+.colr{
+  float: right;
+  margin-top: -23em;
+  padding-right: 3rem;
 }
 @media screen and (max-width: 793px) {
   body {
@@ -217,12 +241,9 @@ tr:nth-child(even) {
       align-items: center;
  }
 }
-/*@media screen and (max-width: 280px) {
-}
-*/
 @media screen and (max-width: 900px) {
   body {
-      background-color: rgb(226, 55, 55);
+      background-color: rgb(245, 176, 196);
  }
 }
 @media screen and (max-width: 710px){
@@ -242,7 +263,7 @@ tr:nth-child(even) {
       float: none;
       margin-left: 3rem;
  }
-  input[type=submit] {
+ .text-search {
       visibility: hidden;
       display: none;
  }
@@ -250,6 +271,11 @@ tr:nth-child(even) {
       visibility: hidden;
       display: none;
  }
+ .colr{
+  float: none;
+  margin-top: auto;
+  padding-right: auto;
+  }
 }
 @media screen and (max-width: 580px) {
   .yazı{
@@ -258,4 +284,18 @@ tr:nth-child(even) {
       padding: 0.3rem;
       color: rgb(107, 53, 207);
  }
+}
+@media screen and (max-width: 800px) {
+  header, header nav {
+  margin-bottom: 15rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+.şirkethakkında{
+  color: #e59595;
+  padding: 1rem;
+  margin-top: -15rem;
+  font-size: small;
+  }
 }

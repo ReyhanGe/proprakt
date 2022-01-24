@@ -1,22 +1,18 @@
+
+
 <?php
     if (empty($_POST)) {
         header("Location: ./index.php");
         exit();
     }
 ?>
-
-<link rel="stylesheet" href="style.css">
-
-
 <?php
-
 $servername = "localhost";
 $username = "root";
 $password = "";
 $databasename= "reynzen";
 
 $conn = mysqli_connect($servername, $username, $password, $databasename);
-
 
 $firstname = $_POST["firstname"];
 $lastname =  $_POST["lastname"];
@@ -27,14 +23,12 @@ $subjectt = $_POST["subjectt"];
 $sql = "INSERT INTO `recensie` (`firstname`, `lastname`, `phone`, `email`, `subjectt`)
 VALUES ('$firstname','$lastname', '$phone', '$email', '$subjectt');";
 
-
 mysqli_query($conn, $sql);
 
 
 $sql = "SELECT * FROM `recensie`";
 
 $result = mysqli_query($conn, $sql);
-
 
 $row = ""; 
     while ($record = mysqli_fetch_assoc($result)){
@@ -48,14 +42,13 @@ $row = "";
     }
 
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
     <title>RecentiePagina</title>
 </head>
@@ -79,7 +72,6 @@ $row = "";
             </ul>
         </nav>
     </header>
-
 
     <div class="container">
         <div class="row">
